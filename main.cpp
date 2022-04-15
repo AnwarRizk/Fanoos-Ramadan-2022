@@ -49,13 +49,13 @@ void DrawMiddlePart(int n, int check = 1){
     int col = 1 + rand() % 14;
     for(int i = 0; i < n/4; i++){
         if(check) Sleep(50);
-        if(i == 0){
-          cout << string(30, ' ');
-          cout << '\\' << string((n - 17) / 2, ' ');
+        if(i == (n/4 - 1)/2){
+          cout << string(30 + i, ' ');
+          cout << '\\' << string(((n - ((i+1)*2+1)) - 15) / 2, ' ');
           SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 176);
           cout << "RAMADAN  KAREEM";
           SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), col);
-          cout << string((n - 17) / 2, ' ') << "/\n";
+          cout << string(((n - ((i+1)*2+1)) - 15) / 2, ' ') << "/\n";
           tmp--;
           continue;
         }
