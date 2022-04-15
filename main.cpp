@@ -11,12 +11,12 @@ int start(){
     s:
     system("cls");
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-    cout << "\n\t Enter a number 'n' (divisible by 4 & n >= 20)...\n";
-    cout << "\t like 20, 24, 28, 32, 36..... :  ";
+    cout << "\n\t Enter a number 'n' (divisible by 4 & n >= 24)...\n";
+    cout << "\t like 24, 28, 32, 36..... :  ";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
     cin >> n;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
-    if(n % 4 || n < 20) {
+    if(n % 4 || n < 24) {
         cout << "\n\t\t Invalid number";
         Sleep(250); cout << "."; Sleep(250); cout << ".";
         Sleep(250); cout << "."; Sleep(250); cout << "! \a";
